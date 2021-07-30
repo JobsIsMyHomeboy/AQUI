@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI
 import Combine
 
+@available(iOSApplicationExtension, unavailable)
 fileprivate func rootController() -> UIViewController? {
     let scenes = UIApplication.shared.connectedScenes.compactMap {
         $0 as? UIWindowScene
