@@ -62,6 +62,7 @@ fileprivate struct _SpecialSheetPseudoView<SheetContent: View, ViewContent: View
 @available(iOS 13.0, tvOS 13.0, *)
 @available(OSX, unavailable)
 @available(watchOS, unavailable)
+@available(iOSApplicationExtension, unavailable)
 extension View {
     public func sheet<Content: View>(
         isPresented: Binding<Bool>,

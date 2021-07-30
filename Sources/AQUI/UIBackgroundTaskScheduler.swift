@@ -19,6 +19,7 @@ import UIKit
 @available(iOS 13.0, tvOS 13.0, *)
 @available(OSX, unavailable)
 @available(watchOS, unavailable)
+@available(iOSApplicationExtension, unavailable)
 public struct UIBackgroundTaskScheduler<Target: Scheduler>: Scheduler {
     // We pass through to another (real) scheduler, so use their types.
     public typealias SchedulerTimeType = Target.SchedulerTimeType
