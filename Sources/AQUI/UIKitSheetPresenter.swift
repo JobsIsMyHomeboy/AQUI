@@ -26,6 +26,7 @@ fileprivate func rootController() -> UIViewController? {
     return nil
 }
 
+@available(iOSApplicationExtension, unavailable)
 fileprivate struct _SpecialSheetPseudoView<SheetContent: View, ViewContent: View>: View {
     @Binding var isPresented: Bool
     @Boxed private var presentedController: UIHostingController<SheetContent>? = nil
